@@ -1,12 +1,136 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RH-Nexus</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-   
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RH Company</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <!-- Barra de navegação -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#"> RH Company </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNavegacao"
+            aria-controls="menuNavegacao"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuNavegacao">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#inicio"> Início </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre"> Sobre Nós </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#fundadores"> Fundadores </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contato"> Contato </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Informações sobre RH -->
+      <section id="inicio" class="secao-rh">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-10">
+              <h1 class="titulo-principal">Recursos Humanos</h1>
+
+              <p class="texto-rh">
+                O setor de Recursos Humanos é responsável por cuidar das pessoas
+                dentro de uma organização, auxiliando na gestão, desenvolvimento
+                e valorização dos colaboradores.
+              </p>
+
+              <p class="texto-rh">
+                Um RH eficiente contribui para um ambiente de trabalho saudável,
+                fortalece a relação entre colaboradores e empresa e ajuda a
+                organização a alcançar seus objetivos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fundadores -->
+      <section id="fundadores" class="secao-fundadores">
+        <div class="container">
+          <div class="row">
+            <!-- Fundador 1 -->
+            <div class="col-md-6 text-center">
+              <div class="fundador">
+                <h2 class="nome-fundador">João Silva</h2>
+
+                <p class="descricao-fundador">
+                  João Silva é um dos fundadores da empresa e atua na área de
+                  gestão e desenvolvimento organizacional, contribuindo para o
+                  crescimento da empresa.
+                </p>
+              </div>
+            </div>
+
+            <!-- Fundador 2 -->
+            <div class="col-md-6 text-center">
+              <div class="fundador">
+                <h2 class="nome-fundador">Maria Santos</h2>
+
+                <p class="descricao-fundador">
+                  Maria Santos é uma das fundadoras da empresa e trabalha com
+                  gestão de pessoas, buscando promover inovação e qualidade no
+                  ambiente profissional.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+      <div class="container text-center">
+        <h3>RH Company</h3>
+
+        <p>
+          Somos uma empresa dedicada à gestão de pessoas e ao desenvolvimento de
+          ambientes profissionais mais eficientes, humanos e colaborativos.
+        </p>
+
+        <p class="copyright">
+          &copy; 2026 RH Company. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
