@@ -1,11 +1,125 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folha salarial</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Projeto acadêmico de Recursos Humanos" />
+    <title>RH Fácil | Folha Salarial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">RH Fácil</a
+        ><button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="folha_salarial.html">Folha Salarial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hora_extra.html">Hora Extra</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="descontoInss.html">Desconto INSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rankingSalarial.html"
+                >Ranking Salarial</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mediaSalarial.html">Média Salarial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container py-5">
+      <div class="mb-4">
+        <span class="section-kicker">Problema 1</span>
+        <h1 class="fw-bold">Folha salarial</h1>
+        <p class="text-secondary">Calcule a folha de um funcionário.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+              <form id="form">
+                <label class="form-label">Salário base</label
+                ><input
+                  id="salario"
+                  type="number"
+                  min="0.01"
+                  step="0.01"
+                  class="form-control mb-3"
+                /><label class="form-label">Horas extras</label
+                ><input
+                  id="horas"
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  class="form-control mb-3"
+                /><label class="form-label">Adicional da hora extra (%)</label
+                ><input
+                  id="adicional"
+                  type="number"
+                  min="0"
+                  value="50"
+                  class="form-control mb-3"
+                /><label class="form-label">Carga mensal (horas)</label
+                ><input
+                  id="carga"
+                  type="number"
+                  min="1"
+                  value="220"
+                  class="form-control mb-3"
+                />
+                <div class="form-text mb-3">
+                  Regra didática: INSS simplificado = 9% do total bruto.
+                </div>
+                <button class="btn btn-primary w-100">Calcular folha</button>
+                <div id="erro" class="alert alert-danger d-none mt-3"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div id="resultado" class="result-card h-100">
+            Preencha os dados para visualizar o resultado.
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-5 py-4">
+      <div class="container text-center">
+        <p class="mb-1 fw-semibold">
+          RH Fácil — Projeto acadêmico de Recursos Humanos
+        </p>
+        <p class="mb-0 small">
+          Dupla: Nome do Aluno 1 e Nome do Aluno 2 • Desenvolvimento de Sistemas
+          • IFPI • 2026
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/folha-salarial.js"></script>
+  </body>
 </html>
